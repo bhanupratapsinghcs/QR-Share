@@ -109,6 +109,8 @@ body{
 
 }
 .header{
+    margin-right: auto; 
+    margin-left:  auto;
     background-image: linear-gradient(to bottom, #4AE8D0,#EDF2F1 );
     border-top: 0;
     border-right: 0;
@@ -128,5 +130,12 @@ body{
     padding: 10px;
 }
 .wrapper{
-    margin: 0px auto auto auto;
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+
+    max-width: 960px; /* 2 */
+
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+
 }
