@@ -103,97 +103,30 @@ input, select {
 
 
 /*----------My Stylesheet start here---------*/
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body{
-    background: #fff;
+   background-color: #EDF2F1;
 
 }
-.wrapper {
-    margin: 0 auto;
-    width: 1100px;
-}
-
-h1{
-    color: red;
-    height: 50px;
-    font-variant-position: sub;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
-    font-style: bold;
-    font-weight: 50;
-    background-color: #FFFFC4;
-    text-align: left;
-    text-decoration : unset;
-    text-indent: 30px;
-    text-transform : caption;
-    color: #97FF8A; 
-    word-spacing: 10px;
-    line-height:40px;  
+.header{
+    background-image: linear-gradient(to bottom, #4AE8D0,#EDF2F1 );
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px dotted #4AE8D0;
 
 }
-
-nav{
-    width: 100%;
-    height: 100px;
-    background-color: #82D1FF;
-    
+.header h1{
+    color: #3F78F3;
+    font-family: 'PT Serif', serif;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    margin-right: auto;
+    border: 5px;
+    padding: 10px;
 }
-ul{
-    
-
-}
-ul li{
-    list-style: none;
-    display: inline-block;
-    float: left;
-    line-height: 100px; 
-
-}
-ul li a{
-    display: block;
-    color: #EB806C;
-    text-decoration: none;
-    font-family: 'Mali', cursive;
-    font-size: 25px;
-    font-variant: 500;
-    padding: 0 20px;
-
-}
-ul li a:hover{
-    color: red;
-}
-p{
-    color: #BAFF2A;
-    font-size: 27px;
-    line-height: 25px;
-
-}
-.img-dark{
-     width: 300px;
-     height: 200px;
-     background-image: url(WallRey_Xz1ncdtqMR0.jpg);
-     background-size: 200px;
-     background-repeat: no-repeat;
-     background-position: center left;
-
-}
-.img-dark:hover{
-    background-size: 100%
-}
-.container_video{
-    position: relative;
-    padding-bottom: 56.25%;/* 16:9 */
-    padding-top: 100%;
-    height: 0;
-
-}
-.container_video iframe{
-    position: absolute;
-    
-}
-.qr-code-feild{
-    align-content: center;
+.wrapper{
+    margin: 0px auto auto auto;
 }

@@ -1,6 +1,6 @@
 QrCodeGenerator = {
 
-	qrCode: null,
+	qrCode: "QRShare & Generator",
 
 	generateQrCode: function(qrCodeContent) {
 		$('#qrCode').empty();
