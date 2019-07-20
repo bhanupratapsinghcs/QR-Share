@@ -28,12 +28,18 @@ window.onload = function(){
 	};
 
 	function dwnld() {
-		var url = document.getElementById('qrCode').lastChild.getAttribute('src');
-		var link = document.createElement('a');
-		link.download = 'rq';
-		link.href = url;
-		link.click();
-		console.log(url)
+		var edge = document.getElementById("qrCode").firstChild;
+
+		if(window.navigator.msSaveBlob){
+			window.navigator.msSaveBlob(edge.msToBlob(), 'qrCode.png');
+		}else{
+			// var url = document.getElementById('test').lastChild.getAttribute('src');
+			var url = edge.toDataURL();
+			var link = document.createElement('a');
+			link.download = 'QrCode';
+			link.href = url;
+			link.click();
+		}
 	};
 
 };
