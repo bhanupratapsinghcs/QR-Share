@@ -28,7 +28,7 @@ window.onload = function(){
 	};
 
 	function dwnld() {
-		var url = document.getElementById('test').lastChild.getAttribute('src');
+		var url = document.getElementById('qrCode').lastChild.getAttribute('src');
 		var link = document.createElement('a');
 		link.download = 'rq';
 		link.href = url;
