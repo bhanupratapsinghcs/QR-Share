@@ -22,95 +22,39 @@
 </head>
 <body>
 	<!-- Header -->
+
 	<div class="header">
-		<h1>QR Share & Generator</h1>
+		<h1><span>QR</span> Share & Generator</h1>
 	</div>
+
 	<!-- Content -->
 	<div class="wrapper">
-		<div class="main-column">
-			<div class="main-raw">
+		<div class="main-raw">
+			<div class="main-column">
 				<div class="text-column">
+					<label>Content</label>	
 					<textarea id="qrCodeContentTextArea" placeholder="Type Here to create QR Code "></textarea>
 					<button id="generateQrCodeButton">
 						Generate QR Code
 					</button>
 
-					
 				</div>
+
 				<div class="qr-column">
-					<div id="qrCode"></div>
+					<div style="background: #FFF; border: 1px solid #AAA; border-radius: 1rem; padding: 2rem; width: 384px; height: 384px; margin: 0 auto;">
+				    				<div id="qrCode">
+				    					
+				    				</div>
+					</div>
+
+					<button id="dwnld">Export Qr Code</button>
 				</div>
 				
 			</div>
 		</div>
 	</div>
-	<!-- <hr> -->
-	
-	
-	
-
 
 	
-
-
-	<!-- <script id="QRCode.js" type="text/javascript">
-	 	var qrcode = new QRCode("test", {
-    text: "bhanu pratap singh",
-    width: 326,
-    height: 326,
-    colorDark : "#000000",
-    colorLight : "#ffffff",
-    correctLevel : QRCode.CorrectLevel.H
-});
-	 </script> -->
-	 <!-- <script>
-	 	function download(filename, text) {
-			  var element = document.createElement('a');
-			  element.setAttribute('href', 'data:image/png;;base64,' + encodeURIComponent(text));
-			  element.setAttribute('download', filename);
-
-			  element.style.display = 'none';
-			  document.body.appendChild(element);
-
-			  element.click();
-
-			  document.body.removeChild(element);
-	 </script> -->
-	 <!-- <script>
-	 	function download(){
-		var canvas = document.getElementById("qrCode");
-		image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-		var link = document.createElement('a');
-		link.download = "my-image.png";
-		link.href = image;
-		link.click();
-	 		// image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-		  //   var element = document.createElement('a');
-		  //   // element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-		  //   element.setAttribute('download', filename);
-
-		  //   element.style.display = 'none';
-		  //   document.body.appendChild(element);
-
-		  //   element.click();
-
-		  //   document.body.removeChild(element);
-		// }
-		// function text() {
-		// 	var text = document.getElementById("test");
-		    
-		// 	document.getElementById("text").innerHTML = text;
-		// }
-		// // Start file download.
-		// document.getElementById("download").addEventListener("click", function(){
-		//     // Generate download of hello.txt file with some content
-		//     var text = document.getElementById("qrCode").value;
-		//     var filename = "hello.png";
-		    
-		//     download(filename, text);
-		// }, false);
-	 </script> -->
-	 
-	</body>
+</body>
 	 
 </html>
