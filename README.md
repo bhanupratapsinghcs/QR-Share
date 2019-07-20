@@ -18,3 +18,7 @@ etc.
 
 License under the [MIT License](LICENSE)
 
+## Thanks
+
+[David Shim](https://github.com/davidshimjs/qrcodejs)
+
