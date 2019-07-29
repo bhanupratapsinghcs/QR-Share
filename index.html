@@ -4,17 +4,20 @@
 	<title>QR Share &bull; Generator</title>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+	<!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
 
-	<meta name="viewport" content="width=device-width , initial-scale = 1.0">
+
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
 	<meta name="Keywords" content="QRcode ,generate qrcode">
 	<meta name="Description" content="Easy to create QRcode and Share information ,data ,url ,text">
 
 
-	<link rel="stylesheet"  href="QR share.css">
+	<link rel="stylesheet"  href="qr.css">
 
 
-	<script type="text/javascript" src="jquery.js"></script>
+	<!-- <script type="text/javascript" src="jquery.js"></script> -->
 	<script src="QRCode.js"></script>
 	<script src="QrCodeGenerator.js"></script>
 
@@ -22,39 +25,65 @@
 </head>
 <body>
 	<!-- Header -->
-
-	<div class="header">
-		<h1><span>QR</span> Share & Generator</h1>
-	</div>
+	<header>
+  		<div class="inner_header">
+  			<div class="logo_ctn">
+  				<h1><span>Qr</span>Share</h1>
+  			</div>
+  			<div class="menu-toggle"></div>
+  			<nav>
+				<ul>
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="clearfix"></div>
+  		</div>
+	</header>
 
 	<!-- Content -->
 	<div class="wrapper">
 		<div class="main-raw">
 			<div class="main-column">
 				<div class="text-column">
-					<label>Content</label>	
+					<div class="texttype">
+							<label>Content</label>	
+					</div>
 					<textarea id="qrCodeContentTextArea" placeholder="Type Here to create QR Code "></textarea>
-					<button id="generateQrCodeButton">
-						Generate QR Code
-					</button>
+					<div class="txtbutn">
+						<button id="generateQrCodeButton">
+							Generate QR Code
+						</button>
+					</div>
 
 				</div>
 
 				<div class="qr-column">
-					<div style="background: #FFF; border: 1px solid #AAA; border-radius: 1rem; padding: 2rem; width: 384px; height: 384px; margin: 0 auto;">
-				    				<div id="qrCode">
-				    					
-				    				</div>
+					<div class="otcnvs">
+						<div id="qrCode">
+							
+						</div>
 					</div>
-
-					<button id="dwnld">Export Qr Code</button>
+					<div class="dwnbtn">
+						<button id="dwnld">Export Qr Code</button>
+					</div>
 				</div>
-				
 			</div>
 		</div>
 	</div>
-
-	
-</body>
-	 
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+	</script>
+  	<script>
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+		})
+  	</script>	
+</body>	 
 </html>

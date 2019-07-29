@@ -103,18 +103,23 @@ input, select {
 
 
 /*----------My Stylesheet start here---------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+}
 
 body{
    background-color: #EDF2F1;
 
 }
+
+/* Header start */
 .header{
     background: #000;
-    width: 100%;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    border-bottom: 1px;
+    overflow: hidden;
+    padding: 20px 10px;
+    width: inherit ;
 }
 
 .header h1{
@@ -130,10 +135,10 @@ body{
     border: 5px;
     padding: 10px;
 }
-.header h1 span{
-    font-weight: 200;
-}
-.wrapper{
+
+/* content start */
+
+/* .wrapper{
     margin-right: auto; 
     margin-left:  auto; 
 
@@ -144,30 +149,22 @@ body{
 
 }
 .main-raw{
-    margin-right: auto; 
-    margin-left:  auto; 
-
-    max-width: 960px; 
-
-    padding-right: 10px; 
-    padding-left:  10px;
-    padding-top: 10px;
-    padding-right: 10px;
+    
 }
 label{ 
-    display: block;
-    margin: 0 0 .285714rem; 
+     
 }
-/*textarea {
-  display: block;
-  position: absolute;
-  z-index: 2;
-  margin: 0;
-  border: 2px solid #74637f;
-  border-radius: 0;
-  color: #444;
-  background-color: transparent;
-  overflow: auto;
-  resize: none;
-  transition: transform 1s;
-}*/
+textarea {
+  
+} */
+@media screen and(max-width:100px){
+    .header{
+        background: #000;
+        height: auto;
+        overflow: hidden;
+        padding: 0 20px;
+        width: 100% ;
+        align-self: center;
+        display: block;
+    }
+}
